@@ -49,12 +49,13 @@ def generate_answer_url(exam: str, year: int) -> str:
 
 def convert_exam_name(exam_name: str) -> str:
     name_copy = exam_name
-    name_copy.replace(' ', '_')
+    name_copy = name_copy.replace(' ', '_')
+
     if name_copy.endswith('1'): name_copy = name_copy[:-1] + 'I'
     elif name_copy.endswith('2'): name_copy = name_copy[:-1] + 'II'
 
     name_copy = name_copy.upper()
-
+    
     if name_copy not in EXAMS:
-        raise ValueError(f'{exam_name} is not a valid exam name. Valid exams are: {", ".join(EXAMS)}')
+        raise ValueError(f'{name_copy} is not a valid exam name. Valid exams are: {", ".join(EXAMS)}')
     return name_copy

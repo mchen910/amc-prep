@@ -27,4 +27,3 @@ __version__ = "1.0.0"
 from src.write import write_practice_test, write_default_test, get_problem, get_solution
 from src.randomizer import calculate_difficulties, set_difficulties
 from src.generate import convert_exam_name
-

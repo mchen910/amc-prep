@@ -3,8 +3,10 @@ import random
 
 DIFFICULTIES = {
     'AMC_8': [(1, 5), (6, 10), (11, 15), (16, 20), (21, 23), (24, 25)],
-    'AMC_10': [(1, 5), (6, 10), (11, 15), (16, 20), (21, 23), (24, 25)],
-    'AMC_12': [(1, 5), (6, 10), (11, 15), (16, 20), (21, 23), (24, 25)],
+    'AMC_10A': [(1, 5), (6, 10), (11, 15), (16, 20), (21, 23), (24, 25)],
+    'AMC_10B': [(1, 5), (6, 10), (11, 15), (16, 20), (21, 23), (24, 25)],
+    'AMC_12A': [(1, 5), (6, 10), (11, 15), (16, 20), (21, 23), (24, 25)],
+    'AMC_12B': [(1, 5), (6, 10), (11, 15), (16, 20), (21, 23), (24, 25)],
     'AIME_I': [(1, 5), (6, 8), (9, 11), (12, 13), (14, 15)],
     'AIME_II': [(1, 5), (6, 8), (9, 11), (12, 13), (14, 15)]
 }
@@ -18,8 +20,8 @@ def randomize(problems: int, exams: list) -> dict:
         difficulties (list): list of problem numbers grouped by difficulty, e.g. 
             `[(1, 5), (6, 10), (11, 15), (16, 20), (21, 23), (24, 25)]`
         exams (list): Exams to pull problems from. Valid exams are: 
-            `AMC_8, AMC_10, AMC_10A, AMC_10B, AMC_12, AMC_12A, AMC_12B, AIME, 
-            AIME_I`, and `AIME_2`
+            `AMC_8, AMC_10, AMC_10A, AMC_10B, AMC_12, AMC_12A, AMC_12B,  
+            AIME_I`, and `AIME_II`
 
     Returns:
         problem_dict (dict): Dictionary of problem number - (exam, year, problem) pairs.
