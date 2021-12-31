@@ -38,17 +38,22 @@ Now you will be able to use the `olympiad` and `cse5` packages in `Asymptote` co
 
 ## Usage
 
-Go to the `main.py` file in the `src` directory, and customize the problems depending on what you want. As a brief overview: 
+Create a new file, and import everything from `amc`. Run `write_practice_test` using these parameters:
 
 | Parameters   |   Usage     |
 | ------------ | ----------- |
 | `EXAMS`      | List of exams to include in the practice test. The AMC 8, AMC 10/12, and the AIME I/II are all supported.
 | `PROBLEMS`   | Total number of problems to include the the practice test. It should use the estimated difficulties of each problem to make the problems as hard as they would be in the real AMC/AIME. Currently these are capped at the test with the least number of questions included.
-| `OUTPUT_DIR` | The output directory, where the files will be created. 
-| `TEST_DIR`   | An optional directory, where the pdfs will be moved to after being created.
+| `TEX_DIR`    | The LaTeX directory, where the files will be created. 
+| `PDF_DIR`    | An optional directory, where the pdfs will be moved to after being created.
+| `AUX_DIR`    | An optional directory to move the auxillary files created by `pdflatex` to. If this directory is not specified, all auxillary files will be deleted.
 | `P_FILENAME` | The filename of the generated problem pdf and tex file.
 | `S_FILENAME` | The filename of the generated solutions pdf and tex file.
 | `A_FILENAME` | The filename of the generated answer key pdf and tex file.
+| `P_EXAM_NAME`| The exam name of the created problem file.
+| `S_EXAM_NAME`| The exam name of the created solution file.
+| `A_EXAM_NAME`| The exam name of the created answer file.
+| `quiet`      | An optional parameter to pass to silence all extra messages
 
 Problems that have been generated before are stored in a `.used` file, which includes exam name, year, and problem number.
 
