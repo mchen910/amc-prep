@@ -1,8 +1,8 @@
-from src.generate import *
-from src.extract import *
-from src.filewriter import FileWriter
-from src.utils import *
-from src.randomizer import randomize
+from amc.generate import *
+from amc.extract import *
+from amc.filewriter import FileWriter
+from amc.utils import *
+from amc.randomizer import randomize
 
 
 def get_description(exam: str, year: int, problem: int, description: str) -> str:

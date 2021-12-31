@@ -1,4 +1,4 @@
-from src.generate import *
+from amc.generate import *
 import random
 
 DIFFICULTIES = {

@@ -24,6 +24,6 @@ To create a practice test, run (as an example):
 
 __version__ = "1.0.0"
 
-from src.write import write_practice_test, write_default_test, get_problem, get_solution
-from src.randomizer import calculate_difficulties, set_difficulties
-from src.generate import convert_exam_name
+from amc.write import write_practice_test, write_default_test, get_problem, get_solution
+from amc.randomizer import calculate_difficulties, set_difficulties
+from amc.generate import convert_exam_name
