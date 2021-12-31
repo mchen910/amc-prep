@@ -51,3 +51,5 @@ Go to the `main.py` file in the `src` directory, and customize the problems depe
 | `A_FILENAME` | The filename of the generated answer key pdf and tex file.
 
 Problems that have been generated before are stored in a `.used` file, which includes exam name, year, and problem number.
+
+Currently only tested on MacOS.
