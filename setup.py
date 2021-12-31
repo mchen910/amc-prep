@@ -11,6 +11,6 @@ setup(
     long_description=long_description,
     author="Matthew Chen",
     author_email="matthewchen910@gmail.com",
-    packages=["amc-prep"],
+    packages=["amc"],
     requires=["beautifulsoup4", "requests", "termcolor", "PyLaTeX"]
 )
