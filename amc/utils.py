@@ -45,12 +45,12 @@ def run_cleanup(directory: str, file_ext: list = 'default', aux_directory: str =
 
 def run_asy(filename: str, directory: str, mode: str = 'batchmode', quiet: bool = False):
     if not quiet: print(termcolor.colored('Running asy and moving/deleting auxillary files...', 'cyan'))
-    os.system(f'cd {directory}; pdflatex -interaction={mode} {filename};' + 
-              f'asy {filename}-*; pdflatex -interaction={mode} {filename}')
+    os.system(f'cd {directory}; pdflatex -interaction={mode} {filename} >> /dev/null 2>&1;' + 
+              f'asy {filename}-*; pdflatex -interaction={mode} {filename} >> /dev/null 2>&1')
 
 
 def run_pdflatex(filename: str, directory: str, mode: str = 'batchmode'):
-    os.system(f'cd {directory}; pdflatex -interaction={mode} {filename}')
+    os.system(f'cd {directory}; pdflatex -interaction={mode} {filename} >> /dev/null 2>&1')
 
 
 def delete_extra_tex_pdf(directory: str):
