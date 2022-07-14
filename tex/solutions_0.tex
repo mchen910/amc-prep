@@ -1,0 +1,927 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{amsmath}%
+\usepackage{amssymb}%
+\usepackage{hyperref}%
+\usepackage{geometry}%
+\usepackage{asymptote}%
+%
+\title{Solutions}%
+\author{MAA}%
+\geometry{margin=1in}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+\section*{Acknowledgement}%
+\label{sec:Acknowledgement}%
+All the following problems are copyrighted by the \href{https://www.maa.org/}{Mathematical Association of America}'s \href{https://www.maa.org/math-competitions}{American Mathematics Competitions}.
+
+%
+\clearpage%
+\section*{Problem 1}%
+\label{sec:Problem1}%
+\begin{enumerate}%
+\item%
+From the \href{/wiki/index.php/Greedy_algorithm}{greedy algorithm}, we have $9$ in the hours section and $59$ in the minutes section. $9+5+9=\boxed{\textbf{(E) }23}$
+
+%
+\item%
+With a matrix, we can see
+$\begin{bmatrix} 1+2&9&6&3\\ 1+1&8&5&2\\ 1+0&7&4&1 \end{bmatrix}$
+The largest single digit sum we can get is $9$.
+For the minutes digits, we can combine the largest $2$ digits, which are $9,5 \Rightarrow 9+5=14$, and finally $14+9=\boxed{\textbf{(E) }23}$
+
+%
+\item%
+We first note that since the watch displays time in AM and PM, the value for the hours section varies from $00-12$. Therefore, the maximum value of the digits for the hours is when the watch displays $09$, which gives us $0+9=9$.
+
+Next, we look at the value of the minutes section, which varies from $00-59$. Let this value be a number $ab$. We quickly find that the maximum value for $a$ and $b$ is respectively $5$ and $9$.
+
+Adding these up, we get $9+5+9=\boxed{\textbf{(E) }23}$.
+
+~\href{/wiki/index.php/User:Dairyqueenxd}{Dairyqueenxd}
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 2}%
+\label{sec:Problem2}%
+\begin{enumerate}%
+\item%
+We are given that $66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}}\Bigr)-0.5=66\Bigl(\underline{1}.\underline{a} \ \underline{b}\Bigr),$ from which
+\begin{align*} 66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}}\Bigr)-66\Bigl(\underline{1}.\underline{a} \ \underline{b}\Bigr)&=0.5 \\ 66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}} - \underline{1}.\underline{a} \ \underline{b}\Bigr)&=0.5 \\ 66\Bigl(\underline{0}.\underline{0} \ \underline{0} \ \overline{\underline{a} \ \underline{b}}\Bigr)&=0.5 \\ 66\left(\frac{1}{100}\cdot\underline{0}.\overline{\underline{a} \ \underline{b}}\right)&=\frac12 \\ \underline{0}.\overline{\underline{a} \ \underline{b}}&=\frac{25}{33} \\ \underline{0}.\overline{\underline{a} \ \underline{b}}&=0.\overline{75} \\ \underline{a} \ \underline{b}&=\boxed{\textbf{(E) }75}. \end{align*}
+~MRENTHUSIASM
+
+%
+\item%
+It is known that $\underline{0}.\overline{\underline{a} \ \underline{b}}=\frac{\underline{a} \ \underline{b}}{99}$ and $\underline{0}.\underline{a} \ \underline{b}=\frac{\underline{a} \ \underline{b}}{100}.$
+
+Let $x=\underline{a} \ \underline{b}.$ We have \[66\biggl(1+\frac{x}{99}\biggr)-66\biggl(1+\frac{x}{100}\biggr)=0.5.\] Expanding and simplifying give $\frac{x}{150}=0.5,$ so $x=\boxed{\textbf{(E) }75}.$
+
+~aop2014 ~BakedPotato66 ~MRENTHUSIASM
+
+%
+\item%
+We have \[66 \cdot \left(1 + \frac{10a+b}{100}\right) + \frac{1}{2} = 66 \cdot \left(1+ \frac{10a+b}{99}\right).\]
+Expanding both sides, we have \[66 + \frac{33(10a+b)}{50} + \frac{1}{2} = 66 + \frac{2(10a+b)}{3}.\]
+Subtracting $66$ from both sides, we have \[\frac{33(10a+b)}{50} + \frac{1}{2} = \frac{2(10a+b)}{3}.\]
+Multiplying both sides by $50 \cdot 3 = 150,$ we have \[99(10a+b) + 75 = 100(10a+b).\]
+Thus, the answer is $10a+b = \boxed{\textbf{(E) }75}.$
+
+By letting $x=\underline{a} \ \underline{b}=10a+b,$ this solution is similar to Solution 2. In this solution, we solve for $10a+b$ as a whole.
+
+-mathboy282 (Solution)
+
+~MRENTHUSIASM (Minor Revision)
+
+%
+\item%
+\href{https://youtu.be/9HI79V-vtCU}{https://youtu.be/9HI79V-vtCU}
+
+~ Education, the Study of Everything
+
+%
+\item%
+\href{https://www.youtube.com/watch?v=xTGDKBthWsw&t=4m12s}{https://www.youtube.com/watch?v=xTGDKBthWsw&t=4m12s}
+
+%
+\item%
+\href{https://www.youtube.com/watch?v=zS1u-ohUDzQ&list=PLexHyfQ8DMuKqltG3cHT7Di4jhVl6L4YJ&index=6}{https://www.youtube.com/watch?v=zS1u-ohUDzQ&list=PLexHyfQ8DMuKqltG3cHT7Di4jhVl6L4YJ&index=6}\
+
+~North America Math Contest Go Go Go
+
+%
+\item%
+\href{https://youtube.com/watch?v=MUHja8TpKGw&t=359s}{https://youtube.com/watch?v=MUHja8TpKGw&t=359s}
+
+%
+\item%
+\href{https://www.youtube.com/watch?v=P5al76DxyHY}{https://www.youtube.com/watch?v=P5al76DxyHY}
+
+%
+\item%
+\href{https://youtu.be/vQZ13WiL4WU}{https://youtu.be/vQZ13WiL4WU}
+
+~ pi\_is\_3.14
+
+%
+\item%
+\href{https://youtu.be/DOF3FYUsXsU}{https://youtu.be/DOF3FYUsXsU}
+
+~savannahsolver
+
+%
+\item%
+\href{https://youtu.be/s6E4E06XhPU?t=360}{https://youtu.be/s6E4E06XhPU?t=360} (AMC 10A)
+
+\href{https://youtu.be/rEWS75W0Q54?t=511}{https://youtu.be/rEWS75W0Q54?t=511} (AMC 12A)
+
+~IceMatrix
+
+%
+\item%
+\href{https://youtu.be/AWjOeBFyeb4}{https://youtu.be/AWjOeBFyeb4}
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 3}%
+\label{sec:Problem3}%
+\begin{enumerate}%
+\item%
+To maximize our estimate, we want to maximize $\frac{a}{b}$ and minimize $c$, because both terms are positive values. Therefore we round $c$ down. To maximize $\frac{a}{b}$, round $a$ up and $b$ down. $\Rightarrow \boxed{\textbf{(D)}}$
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 4}%
+\label{sec:Problem4}%
+\begin{enumerate}%
+\item%
+$\frac{11!-10!}{9!}=\frac{11\cdot10!-10!}{9!}=\frac{100\cdot9!}{9!}=100$
+
+
+$\boxed{\textbf{(B)}~100}$
+
+%
+\item%
+We can use subtraction of fractions to get \[\frac{11!-10!}{9!} = \frac{11!}{9!} - \frac{10!}{9!} = 110 -10 = \boxed{\textbf{(B)}\;100}.\]
+
+
+
+%
+\item%
+Factoring out $9!$ gives $\frac{11!-10!}{9!} = \frac{9!(11 \cdot 10 - 10)}{9!} = 110-10=\boxed{\textbf{(B)}~100}$.
+
+%
+\item%
+\href{https://youtu.be/VIt6LnkV4_w}{https://youtu.be/VIt6LnkV4\_w}
+
+~IceMatrix
+
+\href{https://youtu.be/CrS7oHDrvP8}{https://youtu.be/CrS7oHDrvP8}
+
+~savannahsolver
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 5}%
+\label{sec:Problem5}%
+\begin{enumerate}%
+\item%
+Let $a$ be the bigger number and $b$ be the smaller.
+
+$a + b = 5(a - b)$.
+
+Multiplying out gives $a + b = 5a - 5b$ and rearranging gives $4a = 6b$ and factorised into $2a = 3b$ and then solving gives
+
+$\frac{a}{b} = \frac32$, so the answer is $\boxed{\textbf{(B) }\frac32}$.
+
+%
+\item%
+Without loss of generality, let the two numbers be $3$ and $2$, as they clearly satisfy the condition of the problem. The ratio of the larger to the smaller is $\boxed{\textbf{(B) }\frac32}$.
+
+%
+\item%
+\href{https://youtu.be/JLKoh-Nb0Os}{https://youtu.be/JLKoh-Nb0Os}
+
+~savannahsolver
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 6}%
+\label{sec:Problem6}%
+\begin{enumerate}%
+\item%
+Suppose that line $\ell$ is horizontal, and each circle lies either north or south to $\ell.$ We construct the circles one by one:
+
+The diagram below shows one possible configuration of the four circles:
+
+\begin{center}
+\begin{asy}
+	import olympiad; import cse5; size(6cm); /* diagram made by samrocksnature, edited by MRENTHUSIASM */ pair A=(10,0); pair B=(-10,0); draw(A--B); filldraw(circle((0,7),7),yellow); filldraw(circle((0,-5),5),yellow); filldraw(circle((0,-3),3),white); filldraw(circle((0,-1),1),white); dot((0,0)); label("$A$",(0,0),(0,1.5)); label("$\ell$",(10,0),(1.5,0)); 
+\end{asy}
+\end{center}
+Together, the answer is $\pi\cdot7^2+\pi\cdot5^2-\pi\cdot3^2=\boxed{\textbf{(D) }65\pi}.$
+
+~samrocksnature ~MRENTHUSIASM
+
+%
+\item%
+\href{https://youtu.be/yPIFmrJvUxM}{https://youtu.be/yPIFmrJvUxM}
+
+~ pi\_is\_3.14
+
+%
+\item%
+\href{https://youtu.be/GYpAm8v1h-U?t=206}{https://youtu.be/GYpAm8v1h-U?t=206}
+
+~IceMatrix
+
+%
+\item%
+\href{https://youtu.be/DvpN56Ob6Zw?t=555}{https://youtu.be/DvpN56Ob6Zw?t=555}
+
+~Interstigation
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 7}%
+\label{sec:Problem7}%
+\begin{enumerate}%
+\item%
+Let the radius of the first cylinder be $r_1$ and the radius of the second cylinder be $r_2$. Also, let the height of the first cylinder be $h_1$ and the height of the second cylinder be $h_2$. We are told \[r_2=\frac{11r_1}{10}\] \[\pi r_1^2h_1=\pi r_2^2h_2\] Substituting the first equation into the second and dividing both sides by $\pi$, we get \[r_1^2h_1=\frac{121r_1^2}{100}h_2\implies h_1=\frac{121h_2}{100}.\] Therefore, $\boxed{\textbf{(D)}\ \text{The first height is } 21\% \text{ more than the second.}}$
+
+%
+\item%
+\href{https://youtu.be/zVCHWxfKErE}{https://youtu.be/zVCHWxfKErE}
+
+~savannahsolver
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 8}%
+\label{sec:Problem8}%
+\begin{enumerate}%
+\item%
+Let $CD = 1$. Then $AB = 4(BC + 1)$ and $AB + BC = 9\cdot1$. From this system of equations, we obtain $BC = 1$. Adding $CD$ to both sides of the second equation, we obtain $AD = AB + BC + CD = 9 + 1 = 10$.  Thus, $\frac{BC}{AD} = \frac{1}{10} \implies\text{(C)}$
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 9}%
+\label{sec:Problem9}%
+\begin{enumerate}%
+\item%
+This problem can be converted to a system of equations. Let $p$ be Pete's current age and $c$ be Claire's current age. 
+
+The first statement can be written as $p-2=3(c-2)$. The second statement can be written as $p-4=4(c-4)$
+
+To solve the system of equations:
+
+
+$p=3c-4$
+
+$p=4c-12$
+
+$3c-4=4c-12$
+
+$c=8$
+
+$p=20.$
+
+Let $x$ be the number of years until Pete is twice as old as his sister.
+
+$20+x=2(8+x)$
+
+$20+x=16+2x$
+
+$x=4$
+
+The answer is $\boxed{\textbf{(B) }4}$.
+
+%
+\item%
+\href{https://youtu.be/g8lPXUg-K_I}{https://youtu.be/g8lPXUg-K\_I}
+
+~savannahsolver
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 10}%
+\label{sec:Problem10}%
+\begin{enumerate}%
+\item%
+Notice that when the cone is created, the 2 shown radii when merged will become the slant height of the cone and the intact circumference of the circle will become the circumference of the base of the cone. 
+
+We can calculate that the intact circumference of the circle is $8\pi\cdot\frac{3}{4}=6\pi$. Since that is also equal to the circumference of the cone, the radius of the cone is $3$. We also have that the slant height of the cone is $4$. Therefore, we use the Pythagorean Theorem to calculate that the height of the cone is $\sqrt{4^2-3^2}=\sqrt7$. The volume of the cone is $\frac{1}{3}\cdot\pi\cdot3^2\cdot\sqrt7=\boxed{\textbf{(C)}\ 3 \pi \sqrt7 }$ -PCChess
+
+Using a ruler, measure a circle of radius 4 and cut out the circle and then the quarter missing. Then, fold it into a cone and measure the diameter to be 6 cm $\implies r=3$. You can form a right triangle with sides 3, 4, and then through the Pythagorean theorem the height $h$ is found to be $h^2 = 4^{2} - 3^{2} \implies h = \sqrt{7}$. The volume of a cone is $\frac{1}{3}\pi r^{2}h$. Plugging in we find $V = 3\pi \sqrt{7} \implies \boxed{\textbf{(C)}}$
+
+- DBlack2021
+
+The radius of the given $\frac{3}{4}$ - circle will end up being the slant height of the cone. Thus, the radius and height of the cone are legs of a right triangle with hypotenuse $4$. The volume of a cone is $\frac{1}{3}\pi r^{2}h$. Using this with the options, we can take out the $\pi$ and multiply the coefficient of the radical by $3$ to get $r^{2}h$. We can then use the $r$ and $h$ values to see that the only option that satisfies $r^2+h^2=4^2=16$ is $\boxed{\textbf{(C)}}$
+
+- ColtsFan10
+
+\href{https://youtu.be/OHR_6U686Qg}{https://youtu.be/OHR\_6U686Qg} (for AMC 10)
+\href{https://youtu.be/6ujfjGLzVoE}{https://youtu.be/6ujfjGLzVoE} (for AMC 12)
+
+~IceMatrix
+
+\href{https://youtu.be/4OAhfceUJXc}{https://youtu.be/4OAhfceUJXc}
+
+~savannahsolver
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 11}%
+\label{sec:Problem11}%
+\begin{enumerate}%
+\item%
+Let $a$ be the amount of questions Jesse answered correctly, $b$ be the amount of questions Jesse left blank, and $c$ be the amount of questions Jesse answered incorrectly. Since there were $50$ questions on the contest, $a+b+c=50$. Since his total score was $99$, $4a-c=99$. Also, $a+c\leq50 \Rightarrow c\leq50-a$. We can substitute this inequality into the previous equation to obtain another inequality: $4a-(50-a)\leq99 \Rightarrow 5a\leq149 \Rightarrow a\leq \frac{149}5=29.8$. Since $a$ is an integer, the maximum value for $a$ is $\boxed{\textbf{(C)}\ 29}$.
+
+%
+\item%
+\href{https://youtu.be/vYXz4wStBUU?t=549}{https://youtu.be/vYXz4wStBUU?t=549}
+
+~IceMatrix
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 12}%
+\label{sec:Problem12}%
+\begin{enumerate}%
+\item%
+We can rewrite the fraction as $\frac{123456789}{2^{22} \cdot 10^4} = \frac{12345.6789}{2^{22}}$. Since the last digit of the numerator is odd, a $5$ is added to the right if the numerator is divided by $2$, and this will continuously happen because $5$, itself, is odd. Indeed, this happens twenty-two times since we divide by $2$ twenty-two times, so we will need $22$ more digits. Hence, the answer is $4 + 22 = \boxed{\textbf{(C)}\ 26}$
+
+%
+\item%
+Multiply the numerator and denominator of the fraction by $5^{22}$ (which is the same as multiplying by 1) to give $\frac{5^{22} \cdot 123456789}{10^{26}}$. Now, instead of thinking about this as a fraction, think of it as the division calculation $(5^{22} \cdot 123456789) \div 10^{26}$ . The dividend is a huge number, but we know it doesn't have any digits to the right of the decimal point. Also, the dividend is not a multiple of 10 (it's not a multiple of 2), so these 26 divisions by 10 will each shift the entire dividend one digit to the right of the decimal point. Thus, 
+$\boxed{\textbf{(C)}\ 26}$ is the minimum number of digits to the right of the decimal point needed.
+
+%
+\item%
+The denominator is $10^4 \cdot 2^{22}$. Each $10$ adds one digit to the right of the decimal, and each additional $2$ adds another digit. The answer is $4 + 22 = \boxed{\textbf{(C)}\ 26}$.
+
+%
+\item%
+First, we can write the denominator as $2^{22}\cdot 10^4$ and forget about the $10^4$ (however, we will need to add $4$ back to our final answer). Noticing that $2^{22}=\left(2^{11} \right)^2=2048^2,$ we divide 123456789 by 2048 using long division. We get 60281.63525390625 as the result (though the process seems intimidating, it actually doesn't take that long, just a couple of minutes). From there, we notice that there are 11 places after the decimal point in the quotient, which means there will be another 11 after we divide this quotient by 2048 again. So, there will be $22$ places after the decimal in the final quotient. We add back $4$ for a total of $26.$
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 13}%
+\label{sec:Problem13}%
+\begin{enumerate}%
+\item%
+The smallest possible value of $z$ will be that of $\frac{5\pi}{3} - \frac{3\pi}{2} = \frac{\pi}{6} \Rightarrow \mathrm{(A)}$.
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 14}%
+\label{sec:Problem14}%
+\begin{enumerate}%
+\item%
+We have $8xy - 12y + 2x - 3 = 4y(2x - 3) + (2x - 3) = (4y + 1)(2x - 3)$. 
+
+As $(4y + 1)(2x - 3) = 0$ must be true for all $y$, we must have $2x - 3 = 0$, hence $\boxed{x = \frac 32\ \mathrm{ (D)}}$.
+
+%
+\item%
+Since we want only the $y$-variable to be present, we move the terms only with the $y$-variable to one side, thus constructing $8xy - 12y + 2x - 3 = 0$ to $8xy + 2x = 12y + 3$. For there to be infinite solutions for $y$ and there is no $x$, we simply find a value of $x$ such that the equation is symmetrical. Therefore,
+
+$2x = 3$
+
+$8xy = 12y$
+
+There is only one solution, namely $x = \boxed{\dfrac{3}{2}}$ or $\text{(D)}$
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 15}%
+\label{sec:Problem15}%
+\begin{enumerate}%
+\item%
+Using the area formulas for an equilateral triangle $\left(\frac{{s}^{2}\sqrt{3}}{4}\right)$ and regular hexagon $\left(\frac{3{s}^{2}\sqrt{3}}{2}\right)$, with side length $s$ and plugging $\frac{a}{3}$ and $\frac{b}{6}$ into each equation, we find that $\frac{{a}^{2}\sqrt{3}}{36}=\frac{{b}^{2}\sqrt{3}}{24}$. Simplifying this, we get $\frac{a}{b}=\boxed{\textbf{(B)} \frac{\sqrt{6}}{2}}$
+
+%
+\item%
+The regular hexagon can be broken into 6 small equilateral triangles, each of which is similar to the big equilateral triangle. The big triangle's area is 6 times the area of one of the little triangles. Therefore each side of the big triangle is $\sqrt{6}$ times the side of the small triangle. The desired ratio is $\frac{3\sqrt{6}}{6}=\frac{\sqrt{6}}{2}\Rightarrow(B).$
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 16}%
+\label{sec:Problem16}%
+\begin{enumerate}%
+\item%
+If Jack's current age is $\overline{ab}=10a+b$, then Bill's current age is $\overline{ba}=10b+a$.
+
+In five years, Jack's age will be $10a+b+5$ and Bill's age will be $10b+a+5$. 
+
+We are given that $10a+b+5=2(10b+a+5)$. 
+
+
+Thus $8a=19b+5 \Rightarrow a=\dfrac{19b+5}{8}$. 
+
+For $b=1$ we get $a=3$. For $b=2$ and $b=3$ the value $\frac{19b+5}8$ is not an integer, and for $b\geq 4$, $a$ is more than $9$. Thus the only solution is $(a,b)=(3,1)$, and the difference in ages is $31-13=\boxed{\mathrm{(B)\ }18}$.
+
+%
+\item%
+Age difference does not change in time. Thus in five years Bill's age will be equal to their age difference.
+
+The age difference is $(10a+b)-(10b+a)=9(a-b)$, hence it is a multiple of $9$. Thus Bill's current age modulo $9$ must be $4$.
+
+Thus Bill's age is in the set $\{13,22,31,40,49,58,67,76,85,94\}$.
+
+As Jack is older, we only need to consider the cases where the tens digit of Bill's age is smaller than the ones digit. This leaves us with the options $\{13,49,58,67\}$. 
+
+Checking each of them, we see that only $13$ works, and gives the solution $31-13=\boxed{\mathrm{(B)\ }18}$.
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 17}%
+\label{sec:Problem17}%
+\begin{enumerate}%
+\item%
+Quickly verifying by plugging in values verifies that $-1$ and $1$ are in the domain.
+
+$f(x)+f\left(\frac{1}{x}\right)=x$
+
+Plugging in $\frac{1}{x}$ into the \href{/wiki/index.php/Function}{function}: 
+
+$f\left(\frac{1}{x}\right)+f\left(\frac{1}{\frac{1}{x}}\right)=\frac{1}{x}$
+
+$f\left(\frac{1}{x}\right)+ f(x)= \frac{1}{x}$
+
+Since $f(x) + f\left(\frac{1}{x}\right)$ cannot have two values: 
+
+$x = \frac{1}{x}$
+
+$x^2 = 1$
+
+$x=\pm 1$
+
+Therefore, the largest \href{/wiki/index.php/Set}{set} of \href{/wiki/index.php/Real_number}{real numbers} that can be in the \href{/wiki/index.php/Domain}{domain} of $f$ is $\{-1,1\} \Rightarrow E$
+
+%
+\item%
+We know that $f(x) + f \left(\frac{1}{x}\right) = x.$ Plugging in $x = \frac{1}{x}$ we get \[f \left(\frac{1}{x}\right) + f \left(\frac{1}{\frac{1}{x}}\right) = \frac{1}{x}\] \[f \left(\frac{1}{x}\right) + f(x) = \frac{1}{x}.\]
+
+Also notice \[f \left(\frac{1}{x}\right) + f(x) = x\] by the commutative property(this is the same as the equation given in the problem. We are just rearranging). So we can set $\frac{1}{x} = x$ which gives us $x = \pm 1$ which is answer option $\boxed{\mathrm{(E) \ }  \{-1,1\}}.$
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 18}%
+\label{sec:Problem18}%
+\begin{enumerate}%
+\item%
+Note that odd sums can only be formed by $(e,e,o)$ or $(o,o,o),$ so we focus on placing the evens: we need to have each even be with another even in each row/column. It can be seen that there are $9$ ways to do this. There  are then $5!$ ways to permute the odd numbers, and $4!$ ways to permute the even numbers, thus giving the answer as $\frac{9 \cdot 5! \cdot 4!}{9!}=\boxed{\textbf{(B) }\frac{1}{14}}$.
+
+~Petallstorm
+
+By the \href{https://artofproblemsolving.com/wiki/index.php/Pigeonhole_Principle}{https://artofproblemsolving.com/wiki/index.php/Pigeonhole\_Principle}, there must be at least one row with $2$ or more odd numbers in it. Therefore, that row must contain $3$ odd numbers in order to have an odd sum. The same thing can be done with the columns. Thus we simply have to choose one row and one column to be filled with odd numbers, so the number of valid odd/even configurations (without regard to which particular odd and even  numbers are placed where) is $3 \cdot 3 = 9$. The denominator will be $\binom{9}{4}$, the total number of ways we could choose which $4$ of the $9$ squares will contain an even number. Hence the answer is \[\frac{9}{\binom{9}{4}}=\boxed{\textbf{(B) }\frac{1}{14}}\]
+
+- The Pigeonhole Principle isn't really necessary here: After noting from the first solution that any row that contains evens must contain two evens, the result follows that the four evens must form the corners of a rectangle.
+
+~Petallstorm
+
+Note that there are 5 odds and 4 evens, and for three numbers to sum an odd number, either 1 or three must be odd. Hence, one column must be all odd and one row must be all odd. First, we choose a row, for which there are three choices and within the row P(5,3). There are 3! ways to order the remaining odds and 4! ways to order the evens. The total possible ways is 9!. $\frac{3 \cdot P(5,3) \cdot 3! \cdot 4!}{9!}=\boxed{\textbf{(B) }\frac{1}{14}}$
+
+~Petallstorm
+
+Note that the odd sums are only formed by, $(O, O, O)$ or any permutation of $(O, E, E)$. When looking at a 3x3 box, we realize that there must always be one column that is odd and one row that is odd. Calculating the probability of one permutation of this we get:
+
+$\frac{5!}{P(9,5)} = \frac{5 \cdot 4\cdot 3 \cdot 2 \cdot 1}{9 \cdot 8\cdot 7 \cdot 6 \cdot 5} = \frac{1}{126}$
+
+Now, there are 9 ways you can get this particular permutation (3 choices for all odd row, 3 choices for all odd column), so multiplying the result by $9$, we get:
+
+\[\frac{1}{126} \cdot 9 = \frac{9}{126} = \boxed{\textbf{(B) }\frac{1}{14}}\]
+~petallstorm
+
+To get an odd sum we need $\text{odd} + \text{odd} + \text{odd}$ or we need $\text{odd} + \text{even} + \text{even}$. Note that there are $9!$ ways to arrange the numbers. Also notice that there are $4$ even numbers and $5$ odd numbers from $1$ through $9$. 
+
+The number of ways to arrange the even numbers is $4!$ and the number of ways to arrange the odd numbers is $5!$. Now a common strategy is to deal with the category with fewer numbers so this suggests for us to look at even numbers and try something out. 
+
+Since we have $4$ even numbers we need to split two evens to one row and two evens to another row. Note that there are $\tbinom{3}{2}$ ways to choose the rows, and the $\tbinom{3}{2}$ to choose where the two even numbers go in that row. The odd numbers go wherever there is a spot left which means we don't need to care about them. So we totally have $9$ ways to place the even numbers. 
+
+Don't forget, we still need to arrange these even and odd numbers and like mentioned above there are $4!$ and $5!$ ways respectively.  
+
+Therefore our answer is simply \[\frac{5! \cdot 4! \cdot 9}{9!} = \frac{1}{7\cdot 2} = \boxed{\frac{1}{14}}.\]
+
+We need to know the number of successful outcomes/Total outcomes. We start by the total number of ways to place the odd numbers, which is $\binom{9}{5}$, which is because there are $5$ odd number between $1$ and $9$. Note we need $1$ odd number and $2$ even numbers OR $3$ odd numbers in each row to satisfy our conditions. We have $3$ types of arrangements for the number of successful outcomes, we could have all the even numbers on the corners, which is $1$ case, We could have the odd numbers arranged like a T, which has $4$ cases (you could twist them around), and you have the even numbers in a $2$ by $2$ square, and you have $4$ cases for that. We have $9$ successful cases and $126$ total cases, so the probability is $\frac{9}{126}$ = $\frac{1}{14}$ which is $\boxed{\textbf{(B) }\frac{1}{14}}$
+
+~Arcticturn
+
+%
+\item%
+\href{https://youtu.be/meWXF5pPdlI}{https://youtu.be/meWXF5pPdlI}
+
+Education, the Study of Everything
+
+\href{https://www.youtube.com/watch?v=uJgS-q3-1JE}{https://www.youtube.com/watch?v=uJgS-q3-1JE}
+
+\href{https://www.youtube.com/watch?v=3Sj7XPernCY}{https://www.youtube.com/watch?v=3Sj7XPernCY}
+
+\href{https://www.youtube.com/watch?v=APKGHtj-2rI}{https://www.youtube.com/watch?v=APKGHtj-2rI}
+
+\href{https://youtu.be/IRyWOZQMTV8?t=2069}{https://youtu.be/IRyWOZQMTV8?t=2069}
+
+~ pi\_is\_3.14
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 19}%
+\label{sec:Problem19}%
+\begin{enumerate}%
+\item%
+
+\begin{center}
+\begin{asy}
+	import olympiad; import cse5;   unitsize(.5cm); defaultpen(linewidth(.8pt)); dotfactor=4;  pair A=(0,0), B=(3,0), C=(0,4);  dot (A); dot (B); dot (C); draw(A--B); draw(A--C); draw(B--C);   draw(Circle(A,1)); draw(Circle(B,2)); draw(Circle(C,3));   
+\end{asy}
+\end{center}
+
+The centers of these circles form a 3-4-5 triangle, which has an area equal to 6.
+
+The areas of the three triangles determined by the center and the two points of tangency of each circle are, using Triangle Area by Sine,
+
+$\frac{1}{2} \cdot 1 \cdot 1 \cdot 1 = \frac{1}{2}$
+
+$\frac{1}{2} \cdot 2 \cdot 2 \cdot \frac{4}{5} = \frac{8}{5}$
+
+$\frac{1}{2} \cdot 3 \cdot 3 \cdot \frac{3}{5} = \frac{27}{10}$
+
+which add up to $4.8$. The area we're looking for is the large 3-4-5 triangle minus the three smaller triangles, or $6 - 4.8 = 1.2 = \frac{6}{5} \rightarrow \boxed{(D)}$.
+
+%
+\item%
+Let $O_1,O_2,O_3$ be the centers of the circles with radii $1,2,3$. Notice that the points of tangency of the $3$ circles are also the points of tangency of the incircle of $\triangle O_1O_2O_3$. Using the radius of an Incircle formula, $r = \frac{A}{S}$ where $S$ is the semi-perimeter, and noting that $\triangle O_1O_2O_3$ is a 3-4-5 right triangle, we see that, \[r = \frac{3 \cdot 4/2}{\frac{3+4+5}{2}} = 1.\]
+Now we set $\triangle O_1O_2O_3$ on the coordinate plane with $O_1=(0,0),O_2=(3,0), O_3 = (0,4)$. So the incenter lies on $(1,1)$. Let the points of tangency of $\triangle O_1O_2O_3$ with it's incenter are $A,B,C$ with $A$ on $O_1O_2$, $B$ on $O_1O_3$, and $C$ on $O_2O_3$. We have that $A = (1,0), B=(0,1)$. Since the line defined by $C$ and the incenter is perpendicular to $O_2O_3$ who has equation $y = \frac{-4}{3}x + 4$, we have it's equation as $(y-1) = \frac{3}{4}(x-1) \rightarrow y = \frac{3}{4}x + \frac{1}{4}$. We have the intersection of the $2$ lines at, \begin{align*}\frac{-4}{3}x + 4 &= \frac{3}{4}x + \frac{1}{4} \\ \frac{15}{4} &= \frac{25}{12}x \\ x &= \frac{9}{5} \\ y &= \frac{-4}{3} \frac{9}{5} + 4 = \frac{8}{5}.\end{align*}
+Here we can use Shoelace Theorem on the points $(\frac{9}{5}, \frac{8}{5}),(0,1),(1,0)$ we get our areas as $\frac{6}{5} \rightarrow \boxed{(D)}.$
+
+~Aaryabhatta1
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 20}%
+\label{sec:Problem20}%
+\begin{enumerate}%
+\item%
+Using the formula for the sum of a geometric series we get that the sums of the given two sequences are $\frac a{1-r_1}$ and $\frac a{1-r_2}$. 
+
+Hence we have $\frac a{1-r_1} = r_1$ and $\frac a{1-r_2} = r_2$.
+This can be rewritten as $r_1(1-r_1) = r_2(1-r_2) = a$. 
+
+As we are given that $r_1$ and $r_2$ are distinct, these must be precisely the two roots of the equation $x^2 - x + a = 0$.
+
+Using \href{/wiki/index.php/Vieta%27s_formulas}{Vieta's formulas} we get that the sum of these two roots is $\boxed{1}$.
+
+
+
+%
+\item%
+We basically have two infinite geometric series whose sum is equivalent to the common ratio. Let us have a geometric series: $b, br, br^2.....$. 
+
+The sum is: $\frac{b}{1-r} = r.$ Thus, $b = r-r^2$ and by Vieta's, the sum of the two possible values of $r$ ($r_1$ and $r_2$) is $1$.
+
+
+
+~conantwiz2023
+
+%
+\item%
+Using the formula for the sum of a geometric series we get that the sums of the given two sequences are $\frac a{1-r_1}$ and $\frac a{1-r_2}$. 
+
+Hence we have $\frac a{1-r_1} = r_1$ and $\frac a{1-r_2} = r_2$.
+This can be rewritten as $r_1(1-r_1) = r_2(1-r_2) = a$.
+
+Which can be further rewritten as $r_1-r_1^2 = r_2-r_2^2$.
+Rearranging the equation we get $r_1-r_2 = r_1^2-r_2^2$.
+Expressing this as a difference of squares we get $r_1-r_2 = (r_1-r_2)(r_1+r_2)$.
+
+Dividing by like terms we finally get $r_1+r_2 = \boxed{1}$ as desired.
+
+
+
+
+Note: It is necessary to check that $r_1-r_2\ne 0$, as you cannot divide by zero. As the problem states that the series are different, $r_1 \ne r_2$, and so there is no division by zero error.
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 21}%
+\label{sec:Problem21}%
+\begin{enumerate}%
+\item%
+The domain of $f_{1}(x)=\sqrt{1-x}$ is defined when $x\leq1$. 
+\[f_{2}(x)=f_{1}\left(\sqrt{4-x}\right)=\sqrt{1-\sqrt{4-x}}\]
+
+Applying the domain of $f_{1}(x)$ and the fact that square roots must be positive, we get $0\leq\sqrt{4-x}\leq1$. Simplifying, the domain of $f_{2}(x)$ becomes $3\leq x\leq4$. 
+
+Repeat this process for $f_{3}(x)=\sqrt{1-\sqrt{4-\sqrt{9-x}}}$ to get a domain of $-7\leq x\leq0$.  
+
+For $f_{4}(x)$, since square roots are positive, we can exclude the negative values of the previous domain to arrive at $\sqrt{16-x}=0$ as the domain of $f_{4}(x)$. We now arrive at a domain with a single number that defines $x$, however, since we are looking for the largest value for $n$ for which the domain of $f_{n}$ is nonempty, we must continue until we arrive at a domain that is empty. We continue with $f_{5}(x)$ to get a domain of $\sqrt{25-x}=16$. Solve for $x$ to get $x=-231$. Since square roots cannot be negative, this is the last nonempty domain. We add to get $5-231=\boxed{\textbf{(A)}\ -226}$.
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 22}%
+\label{sec:Problem22}%
+\begin{enumerate}%
+\item%
+Consider the probability that rolling two dice gives a sum of $s$, where $s \leq 7$. There are $s - 1$ pairs that satisfy this, namely $(1, s - 1), (2, s - 2), \ldots, (s - 1, 1)$, out of $6^2 = 36$ possible pairs. The probability is $\frac{s - 1}{36}$.
+
+Therefore, if one die has a value of $a$ and Jason rerolls the other two dice, then the probability of winning is $\frac{7 - a - 1}{36} = \frac{6 - a}{36}$.
+
+In order to maximize the probability of winning, $a$ must be minimized. This means that if Jason rerolls two dice, he must choose the two dice with the maximum values.
+
+Thus, we can let $a \leq b \leq c$ be the values of the three dice. Consider the case when $a + b < 7$. If $a + b + c = 7$, then we do not need to reroll any dice. Otherwise,
+if we reroll one die, we can reroll any one dice in the hope that we get the value that makes the sum of the three dice $7$. This happens with probability $\frac16$. If we reroll two dice, we will roll the two maximum dice, and the probability of winning is $\frac{6 - a}{36}$, as stated above. However, $\frac16 > \frac{6 - a}{36}$, so rolling one die is always better than rolling two dice if $a + b < 7$.
+
+Now consider the case where $a + b \geq 7$. Rerolling one die will not help us win since the sum of the three dice will always be greater than $7$. If we reroll two dice, the probability of winning is, once again, $\frac{6 - a}{36}$. To find the probability of winning if we reroll all three dice, we can let each dice have $1$ dot and find the number of ways to distribute the remaining $4$ dots. By stars and bars, there are ${6\choose2} = 15$ ways to do this, making the probability of winning $\frac{15}{6^3} = \frac5{72}$.
+
+In order for rolling two dice to be more favorable than rolling three dice, $\frac{6 - a}{36} > \frac5{72} \rightarrow a \leq 3$.
+
+Thus, rerolling two dice is optimal if and only if $a \leq 3$ and $a + b \geq 7$. The possible triplets $(a, b, c)$ that satisfy these conditions, and the number of ways they can be permuted, are
+
+$(3, 4, 4) \rightarrow 3$ ways.
+
+$(3, 4, 5) \rightarrow 6$ ways.
+
+$(3, 4, 6) \rightarrow 6$ ways.
+
+$(3, 5, 5) \rightarrow 3$ ways.
+
+$(3, 5, 6) \rightarrow 6$ ways.
+
+$(3, 6, 6) \rightarrow 3$ ways.
+
+$(2, 5, 5) \rightarrow 3$ ways.
+
+$(2, 5, 6) \rightarrow 6$ ways.
+
+$(2, 6, 6) \rightarrow 3$ ways.
+
+$(1, 6, 6) \rightarrow 3$ ways.
+
+There are $3 + 6 + 6 + 3 + 6 + 3 + 3 + 6 + 3 + 3 = 42$ ways in which rerolling two dice is optimal, out of $6^3 = 216$ possibilities, Therefore, the probability that Jason will reroll two dice is $\frac{42}{216} = \boxed{\textbf{(A) } \frac{7}{36}}$.
+
+~edits by eagleye
+
+%
+\item%
+We conclude all of the following after the initial roll:
+
+The optimal strategy is that:
+
+Finally, the requested probability is \[\frac{3+12+27}{6^3}=\frac{42}{216}=\boxed{\textbf{(A) } \frac{7}{36}}.\]
+
+~MRENTHUSIASM
+
+%
+\item%
+We count the numerator.
+Jason will pick up no dice if he already has a $7$ as a sum. We need to assume he does not have a $7$ to begin with.
+If Jason decides to pick up all the dice to re-roll, by the stars and bars rule ways to distribute, ${n+k-1 \choose k-1}$, there will be $2$ bars and $4$ stars ($3$ of them need to be guaranteed because a roll is at least $1$) for a probability of $\frac{15}{216}=\frac{2.5}{36}$.
+If Jason picks up $2$ dice and leaves a die showing $k$, he will need the other two to sum to $7-k$. This happens with probability \[\frac{6-k}{36}\] for integers $1 \leq k \leq 6$.
+If the roll is not $7$, Jason will pick up exactly one die to re-roll if there can remain two other dice with sum less than $7$, since this will give him a $\frac{1}{6}$ chance which is a larger probability than all the cases unless he has a $7$ to begin with.
+We have \[\frac{1}{6} > \underline{\frac{5,4,3}{36}} > \frac{2.5}{36} > \frac{2,1,0}{36}.\]
+We count the underlined part's frequency for the numerator without upsetting the probability greater than it.
+Let $a$ be the roll we keep. We know $a\leq3$ since $a=4$ would cause Jason to pick up all the dice.
+When $a=1$, there are $3$ choices for whether it is rolled $1$st, $2$nd, or $3$rd, and in this case the other two rolls have to be at least $6$ (or he would have only picked up $1$). This give $3 \cdot 1^{2} =3$ ways.
+Similarly, $a=2$ gives $3 \cdot 2^{2} =12$ because the $2$ can be rolled in $3$ places and the other two rolls are at least $5$.
+$a=3$ gives $3 \cdot 3^{2} =27$. 
+Summing together gives the numerator of $42$.
+The denominator is $6^3=216$, so we have $\frac{42}{216}=\boxed{\textbf{(A) } \frac{7}{36}}$.
+
+%
+\item%
+Note that Jason will roll $2$ dies if and only if the pairwise sum of the dies is greater than $7$. Suppose that Jason doesn't roll a $1$. This means that roll was $(1, 6, 6)$ which can be arranged in $3$ ways. Suppose that Jason doesn't roll a $2$. This means the roll was either $(2, 5/6, 5/6)$ which can be arranged in $12$ ways. Suppose that Jason doesn't roll a $3$. This means that the roll was either $(3, 4/5/6, 4/5/6)$ which can be arranged in $27$ ways. Jason can't roll a $4, 5, 6$ because he can't get a pairwise sum of $7$ from those numbers. Thus he rolls two dies exactly $27 + 12 + 3 = 42$ out of the $6^3$ possible rolls. So the answer is $\frac{42}{216} = \boxed{\textbf{(A) } \frac{7}{36}}$. 
+
+~coolmath\_2018
+
+%
+\item%
+We can quickly write out all possible rolls that result in a total of $7$, to get that there is a $\frac{5}{72}$ chance that rolling three dice will result in a total of $7$.
+
+Claim 1: Iff all of Jason's initial outcomes are $4$, $5$ or $6$, Jason is best off rerolling everything.
+
+Proof of if part: If Jason rerolls two dice, he would like for the sum of the two outcomes to be $7-\text{(The initial outcome of the untouched dice)}$. Since in this case, every dice's initial outcome is $4$, $5$ or $6$, this value is $1$, $2$ or $3$. By basic dice probability, the probability that they add to one is $0$; the probability that they add to two is $\frac{1}{36}$; the probability that they add to three is $\frac{1}{18}$. Each of these probabilities is less than $\frac{5}{72}$, (the probability of winning by rerolling everything) so Jason should not reroll one dice in this scenario. Rolling one die is also nonsense in this situation, since the other two dice will already add up to something greater than $7$.
+
+Proof of only-if part: If Jason rolls a $1$, $2$ or $3$, even just once, then, the probability that rerolling the other two dice will result in win is $\frac{5}{36}$, $\frac{1}{9}$ and $\frac{1}{12}$, by basic die probability. Each of these is greater than $\frac{5}{72}$, so if Jason rolls a $1$, $2$ or $3$, he should not reroll everything.
+
+Claim 2: Iff the sum of any two of the initial dice is less than $7$, Jason is best off rerolling one or zero die.
+
+Proof of if part: If the sum of any two of the initial dice is less than $7$, when the other die is rolled, there is always a fixed $\frac{1}{6}$ chance that this results in a win for Jason (or, he his initial roll already won, so he doesn't have to roll anything). Rerolling that one die is better than rerolling all three dice, since, as we have seen there is a $\frac{5}{72}$ chance that Jason wins from that. Rerolling that one die is also better than rerolling two dice: by basic die probability, if Jason wishes for the sum of two rerolled dice to equal one value, the maximum probability this happens is $\frac{1}{6}$, and this is when he wishes for the sum to be $7$; however, since he wishes for the sum of all three dice to be $7$, this will never happen, so the probability that rerolling two dice results in a win is always less than $\frac{1}{6}$.
+
+Proof of only-if part: If the sum of each pair of the three dice is at least $7$, it would make no sense to reroll one die, since the final sum of all three dice will always be greater than $7$. Also, if the sum of each pair of the three dice is at least $7$, the total initial sum must also be greater than $7$, so Jason should not reroll zero dice.
+
+From having shown these two claims, we know that Jason should reroll two dice iff at least one of them is a $1$, $2$ or $3$, and iff the sum of any two of the initial dice is at least $7$. We can write out all the possibilities of initial rolls, account for their permutations, and add everything together to see that there are $42$ total outcomes, where Jason should reroll two dice. Therefore, our final answer is $\frac{42}{216} = \boxed{\textbf{(A) } \frac{7}{36}}$.
+
+~ ihatemath123
+
+%
+\item%
+\href{https://youtu.be/B8pt8jF04ZM}{https://youtu.be/B8pt8jF04ZM} - Happytwin
+
+\href{https://artofproblemsolving.com/videos/amc/2020amc10a/516}{https://artofproblemsolving.com/videos/amc/2020amc10a/516}
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 23}%
+\label{sec:Problem23}%
+\begin{enumerate}%
+\item%
+We solve each equation separately:
+
+Note that the problem is equivalent to finding the area of a parallelogram with consecutive vertices $(x_1,y_1)=\left(\sqrt{10}, \sqrt{6}\right),(x_2,y_2)=\left(\sqrt{3},1\right),(x_3,y_3)=\left(-\sqrt{10},-\sqrt{6}\right),$ and $(x_4,y_4)=\left(-\sqrt{3}, -1\right)$ in the coordinate plane. By the Shoelace Theorem, the area we seek is \[\frac{1}{2} \left|(x_1y_2 + x_2y_3 + x_3y_4 + x_4y_1) - (y_1x_2 + y_2x_3 + y_3x_4 + y_4x_1)\right| = 6\sqrt2-2\sqrt{10},\] so the answer is $6+2+2+10=\boxed{\textbf{(A) } 20}.$
+
+~Rejas (Fundamental Logic)
+
+~MRENTHUSIASM (Reconstruction)
+
+%
+\item%
+We solve each equation separately:
+
+We continue with the last paragraph of Solution 1 to get the answer $\boxed{\textbf{(A) } 20}.$
+
+~trumpeter (Fundamental Logic)
+
+~MRENTHUSIASM (Reconstruction)
+
+%
+\item%
+Let $z_1$ and $z_2$ be the solutions to the equation $z^2=4+4\sqrt{15}i,$ and $z_3$ and $z_4$ be the solutions to the equation $z^2=2+2\sqrt 3i.$ Clearly, $z_1$ and $z_2$ are opposite complex numbers, so are $z_3$ and $z_4.$ This solution refers to the results of De Moivre's Theorem in Solution 2.
+
+From Solution 2, let $z_1=4\operatorname{cis}\phi$ for some $0<\phi<\frac{\pi}{4}.$ It follows that $z_2=4\operatorname{cis}(\phi+\pi).$ On the other hand, we have $z_3=2\operatorname{cis}\frac{\pi}{6}$ and $z_4=2\operatorname{cis}\frac{7\pi}{6}$ without the loss of generality. Since $\tan(2\phi)>\tan\frac{\pi}{3},$ we deduce that $2\phi>\frac{\pi}{3},$ from which $\phi>\frac{\pi}{6}.$
+
+In the complex plane, the positions of $z_1,z_2,z_3,$ and $z_4$ are shown below:
+
+\begin{center}
+\begin{asy}
+	import olympiad; import cse5;   /* Made by MRENTHUSIASM */ size(200);   int xMin = -5; int xMax = 5; int yMin = -5; int yMax = 5; int numRays = 24;  //Draws a polar grid that goes out to a number of circles  //equal to big, with numRays specifying the number of rays:  void polarGrid(int big, int numRays)  {   for (int i = 1; i < big+1; ++i)   {     draw(Circle((0,0),i), gray+linewidth(0.4));   }   for(int i=0;i<numRays;++i)    draw(rotate(i*360/numRays)*((-big,0)--(big,0)), gray+linewidth(0.4)); }  //Draws the horizontal gridlines void horizontalLines() {   for (int i = yMin+1; i < yMax; ++i)   {     draw((xMin,i)--(xMax,i), mediumgray+linewidth(0.4));   } }  //Draws the vertical gridlines void verticalLines() {   for (int i = xMin+1; i < xMax; ++i)   {     draw((i,yMin)--(i,yMax), mediumgray+linewidth(0.4));   } }  horizontalLines(); verticalLines(); polarGrid(xMax,numRays); draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5)); draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5)); label("Re",(xMax,0),(2,0)); label("Im",(0,yMax),(0,2));  pair Z1, Z2, Z3, Z4;  Z1 = (sqrt(10),sqrt(6)); Z2 = (-sqrt(10),-sqrt(6)); Z3 = (sqrt(3),1); Z4 = (-sqrt(3),-1);  label("$z_1$", Z1, dir(Z1), UnFill); label("$z_2$", Z2, dir(Z2), UnFill); label("$z_3$", Z3, (0.75,-0.75), UnFill); label("$z_4$", Z4, (-0.75,0.75), UnFill);  draw(Z1--Z3--Z2--Z4--cycle,red);  dot(Z1, linewidth(3.5)); dot(Z2, linewidth(3.5)); dot(Z3, linewidth(3.5)); dot(Z4, linewidth(3.5)); 
+\end{asy}
+\end{center}
+Note that the diagonals of every parallelogram partition the shape into four triangles with equal areas. Therefore, to find the area of the parallelogram with vertices $z_1,z_2,z_3,$ and $z_4,$ we find the area of the triangle with vertices $0,z_1,$ and $z_3,$ then multiply by $4.$
+
+Recall that $|z_1|=4, |z_2|=2, \sin\phi=\frac{\sqrt6}{4},$ and $\cos\phi=\frac{\sqrt{10}}{4}$ from Solution 2. The area of the parallelogram is
+\begin{align*} 4\cdot\left[\frac12\cdot|z_1|\cdot|z_3|\cdot\sin\left(\phi-\frac{\pi}{6}\right)\right] &= 16\sin\left(\phi-\frac{\pi}{6}\right) \\ &= 16\left[\sin\phi\cos\frac{\pi}{6}-\cos\phi\sin\frac{\pi}{6}\right] \\ &= 16\left[\frac{\sqrt3}{2}\sin\phi-\frac12\cos\phi\right] \\ &= 6\sqrt2-2\sqrt{10}, \end{align*}
+so the answer is $6+2+2+10=\boxed{\textbf{(A) } 20}.$
+
+~MRENTHUSIASM
+
+%
+\item%
+Rather than thinking about this with complex numbers, notice that if we take two solutions and think of them as vectors, the area of the parallelogram they form is half the desired area. Also, notice that the area of a parallelogram is $ab\sin \theta$ where $a$ and $b$ are the side lengths. 
+
+The side lengths are easily found since we are given the squares of $z$. Thus, the magnitude of $z$ in the first equation is just $\sqrt{16} = 4$ and in the second equation is just $\sqrt{4} = 2$. Now, we need $\sin \theta$. 
+
+To find $\theta$, think about what squaring is in complex numbers. The angle between the squares of the two solutions is twice the angle between the two solutions themselves. In addition, we can find $\cos$ of this angle by taking the dot product of those two complex numbers and dividing by their magnitudes. The vectors are $\Bigl\langle 4, 4\sqrt{15}\Bigr\rangle$ and $\Bigl\langle 2, 2\sqrt{3}\Bigr\rangle$, so their dot product is $8 + 24\sqrt{5}$. Dividing by the magnitudes yields: $\dfrac{8+24\sqrt{5}}{4 \cdot 16} = \dfrac{1 + 3\sqrt{5}}{8}$. This is $\cos 2\theta$, and recall the identity $\cos 2\theta = 1 - 2\sin^2 \theta$. This means that $\sin^2 \theta = \dfrac{7 - 3\sqrt{5}}{16}$, so $\sin \theta = \dfrac{\sqrt{7-  3\sqrt{5}}}{4}$. Now, notice that $\sqrt{7-  3\sqrt{5}} = \dfrac{3\sqrt{2}-\sqrt{10}}{2}$ (which is not too hard to discover) so $\sin \theta = \dfrac{3\sqrt{2}-\sqrt{10}}{8}$. Finally, putting everything together yields: $2\cdot 4 \cdot \dfrac{3\sqrt{2}-\sqrt{10}}{8} = 3\sqrt{2} - \sqrt{10}$ as the area of the parallelogram found by treating two of the solutions as vectors. However, drawing a picture out shows that we actually want twice this (each fourth of the parallelogram from the problem is one half of the parallelogram whose area was found above) so the desired area is actually $6\sqrt{2} - 2\sqrt{10}$. Then, the answer is $\boxed{\textbf{(A) } 20}$.
+
+~Aathreyakadambi
+
+%
+\item%
+\href{https://artofproblemsolving.com/videos/amc/2018amc12a/472}{https://artofproblemsolving.com/videos/amc/2018amc12a/472}
+
+~ dolphin7
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 24}%
+\label{sec:Problem24}%
+\begin{enumerate}%
+\item%
+Let the ordered triple $(a,b,c)$ denote that $a$ songs are liked by Amy and Beth, $b$ songs by Beth and Jo, and $c$ songs by Jo and Amy. We claim that the only possible triples are $(1,1,1), (2,1,1), (1,2,1)(1,1,2)$. 
+
+To show this, observe these are all valid conditions. Second, note that none of $a,b,c$ can be bigger than 3. Suppose otherwise, that $a = 3$. Without loss of generality, say that Amy and Beth like songs 1, 2, and 3. Then because there is at least one song liked by each pair of girls, we require either $b$ or $c$ to be at least 1. In fact, we require either $b$ or $c$ to equal 1, otherwise there will be a song liked by all three. Suppose $b = 1$. Then we must have $c=0$ since no song is liked by all three girls, a contradiction.
+
+Case 1: How many ways are there for $(a,b,c)$ to equal $(1,1,1)$? There are 4 choices for which song is liked by Amy and Beth, 3 choices for which song is liked by Beth and Jo, and 2 choices for which song is liked by Jo and Amy. The fourth song can be liked by only one of the girls, or none of the girls, for a total of 4 choices. So $(a,b,c)=(1,1,1)$ in $4\cdot3\cdot2\cdot4 = 96$ ways.
+
+Case 2: To find the number of ways for $(a,b,c) = (2,1,1)$, observe there are $\binom{4}{2} = 6$ choices of songs for the first pair of girls. There remain 2 choices of songs for the next pair (who only like one song). The last song is given to the last pair of girls. But observe that we let any three pairs of the girls like two songs, so we multiply by 3. In this case there are $6\cdot2\cdot3=36$ ways for the girls to like the songs.
+
+That gives a total of $96 + 36 = 132$ ways for the girls to like the songs, so the answer is $\boxed{(\textrm{\textbf{B}})}$.
+
+Let $AB, BJ$, and $AJ$ denote a song that is liked by Amy and Beth (but not Jo), Beth and Jo (but not Amy), and Amy and Jo (but not Beth), respectively. Similarly, let $A, B, J,$ and $N$ denote a song that is liked by only Amy, only Beth, only Jo, and none of them, respectively. Since we know that there is at least $1\: AB, BJ$, and $AJ$, they must be $3$ songs out of the $4$ that Amy, Beth, and Jo listened to. The fourth song can be of any type $N, A, B, J, AB, BJ$, and $AJ$ (there is no $ABJ$ because no song is liked by all three, as stated in the problem.) Therefore, we must find the number of ways to rearrange $AB, BJ, AJ$, and a song from the set $\{N, A, B, J, AB, BJ, AJ\}$.
+
+Case 1: Fourth song = $N, A, B, J$
+
+Note that in Case 1, all four of the choices for the fourth song are different from the first three songs.
+
+Number of ways to rearrange = $(4!)$ rearrangements for each choice $*\: 4$ choices = $96$.
+
+Case 2: Fourth song = $AB, BJ, AJ$
+
+Note that in Case $2$, all three of the choices for the fourth song repeat somewhere in the first three songs.
+
+Number of ways to rearrange = $(4!/2!)$ rearrangements for each choice $*\: 3$ choices = $36$.
+
+$96 + 36 = \boxed{\textbf{(B)} \: 132}$.
+
+There are $\binom{4}{3}$ ways to choose the three songs that are liked by the three pairs of girls.
+
+There are $3!$ ways to determine how the three songs are liked, or which song is liked by which pair of girls.
+
+In total, there are $\binom{4}{3}\cdot3!$ possibilities for the first $3$ songs.
+
+There are $3$ cases for the 4th song, call it song D.
+
+Case $1$: D is disliked by all $3$ girls $\implies$ there is only $1$ possibility.
+
+Case $2$: D is liked by exactly $1$ girl $\implies$ there are $3$ possibility.
+
+Case $3$: D is liked by exactly $2$ girls $\implies$ there are $3$ pairs of girls to choose from. However, there's overlap when the other song liked by the same pair of girl is counted as the 4th song at some point, in which case D would be counted as one of the first $3$ songs liked by the same girls.
+
+Counting the overlaps, there are $3$ ways to choose the pair with overlaps and $4\cdot3=12$ ways to choose what the other $2$ pairs like independently. In total, there are $3\cdot12=36$ overlapped possibilities.
+
+Finally, there are $\binom{4}{3}\cdot3!\cdot(3+1+3)-36=132$ ways for the songs to be likely by the girls. $\boxed{\mathrm{(B)}}$
+
+~ Nafer
+
+This is a bipartite graph problem, with the girls as left vertices and songs as right vertices. An edge connecting left vertex and right vertex means that a girl like a song.
+
+Condition 1: "No song is liked by all three", means that the degree of right vertices is at most 2. 
+
+Condition 2: "for each of the three pairs of the girls, there is at least one song liked by those two girls but disliked by the third", means that for any pair of left vertices, there is at least a right vertex connecting to them.
+
+To meet condition 2, there are at least 3 right vertices with 2 edges connecting to left vertices.  There are 2 cases:
+
+Case 1: there are only 3 such right vertices. There are $\binom{4}{3}$ such vertices, with $3!$ ways of connections to the left vertices, total arrangements are $\binom{4}{3}\cdot3! = 24$. The fourth right vertex either has no edge to the 3 left vertices, or 1 edge to 1 of the 3 left vertices.  So there are $24\cdot(1+3) = 96$ ways.
+
+Case 2: there are 4 such right vertices, 2 of them have edges to the same pair of left vertices.  There are $\binom{4}{2}$ such vertices, with $3!$ ways of connections.  So there are $\binom{4}{2}\cdot3! = 36$ ways.
+
+Total ways are $96+36=132$.
+
+Another way is to overcount then subtract overlap ways.  Similar to previous case 1,  the fourth right vertex could have all possible connection to the left vertices except connecting to all 3, so it is $2^3-1=7$ ways, so the total ways are $\binom{4}{3}\cdot3!\cdot7 = 24\cdot7 = 168$.  But this overcounts the case 2 with 36 ways.  So total ways are $168-36=132$.
+
+-\href{https://artofproblemsolving.com/wiki/index.php/User:Junche}{https://artofproblemsolving.com/wiki/index.php/User:Junche}
+
+%
+\item%
+%
+\item%
+\href{https://artofproblemsolving.com/videos/amc/2012amc10b/272}{https://artofproblemsolving.com/videos/amc/2012amc10b/272}
+
+~dolphin7
+
+%
+\item%
+Let's assign to each of the 3 pairs a song that they like, and that song is disliked by the other girl(satisfy the problem's 2nd condition). The first pair has 4 choice, 2nd has 3 choice, and last one has 2 choice. \[4 * 3 * 2\]. Then the last song can be liked/disliked freely, so there is 2^3 = 8 total ways they can like/dislike the songs. Of these 8 cases, one of them is when they all like the song (which isn't allowed by the problem), so we subtract it away to have 7 cases. \[4 * 3 * 2 * 7 = 168\]. But, we have overcounts when one pair of girls likes 2 songs, and the other girl dislikes those 2 songs. We can find the amount of cases that this happens by giving 1 pair of girls 2 songs that they like (and the other dislikes), and the other 2 pairs of girls 1 song that they like. There are 3 pairs of girls that we can choose to like 2 songs, so there are \[3 * (4C2 * 2 * 1) = 36\] ways. \[168 - 36 = 132\].
+
+~heheman (also responsible for bad latex)
+
+%
+\end{enumerate}
+
+%
+\section*{Problem 25}%
+\label{sec:Problem25}%
+\begin{enumerate}%
+\item%
+A positive integer with only four positive divisors has its prime factorization in the form of $a \cdot b$, where $a$ and $b$ are both prime positive integers or $c^3$ where $c$ is a prime. One can easily deduce that none of the numbers are even near a cube so the second case is not possible. We now look at the case of $a \cdot b$. The four factors of this number would be $1$, $a$, $b$, and $ab$.  The sum of these would be $ab+a+b+1$, which can be factored into the form $(a+1)(b+1)$. Easily we can see that now we can take cases again. 
+
+Case 1: Either $a$ or $b$ is 2. 
+
+If this is true then we have to have that one of $(a+1)$ or $(b+1)$ is odd and that one is 3. The other is still even.  So we have that in this case the only numbers that work are even multiples of 3 which are 2010 and 2016. So we just have to check if either $\frac{2016}{3} - 1$  or $\frac{2010}{3} - 1$ is a prime. We see that in this case none of them work.
+
+Case 2: Both $a$ and $b$ are odd primes. 
+
+This implies that both $(a+1)$ and $(b+1)$ are even which implies that in this case the number must be divisible by $4$. This leaves only $2012$ and $2016$.
+$2012={4}\cdot{503}$ so either $(a+1)$ or $(b+1)$ both have a factor of $2$ or one has a factor of $4$. If it was the first case, then $a$ or $b$ will equal $1$.  That means that either $(a+1)$ or $(b+1)$ has a factor of $4$.  That means that $a$ or $b$ is $502$ which isn't a prime, so 2012 does not work.  $2016 = 4 \cdot 504$ so we have $(503 + 1)(3 + 1)$. 503 and 3 are both odd primes, so 2016 is a solution. Thus the answer is $\boxed{\textbf{(A)}\ 1}$.
+
+After deducing that $2012$ and case $1$ is impossible, and since there is no option for $0$, $2016$ is obviously a solution and the answer is (A) $1$.
+
+-mathboy282
+
+%
+\end{enumerate}
+
+%
+\end{document}

@@ -4,6 +4,8 @@ from amc.filewriter import FileWriter
 from amc.utils import *
 from amc.randomizer import randomize
 
+# TODO: add threading: from concurrent.futures import ThreadPoolExecutor
+
 
 def get_description(exam: str, year: int, problem: int, description: str) -> str:
     if description == 'full':
